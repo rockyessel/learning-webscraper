@@ -25,9 +25,9 @@ const getAuthor = (request, response) => {
         if (name.name.indexOf(',') != -1) {
           return;
         } else {
-          let author_name = name.name.split(',');
+          let author_name = name.name.split(' ');
 
-          console.log(author_name);
+          author_name.map(d => console.log(d))
         }
       }
       //   console.log(name);
